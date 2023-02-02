@@ -5,8 +5,8 @@ from pathlib import Path
 # Function checks for new csv data folders* (not individual files) in raw_data_root and coverts them into a npy array
 # format 
 
-raw_data_root = 'data/raw_csv'
-npy_data_root = 'data/processed_npy'
+raw_data_root = 'data/raw_csv'      # Root folder of the csv data files
+npy_data_root = 'data/processed_npy'# Root folder for the npy array save location
 
 for path, subdirs, files in os.walk(raw_data_root):
     for name in files:
